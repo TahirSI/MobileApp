@@ -11,12 +11,13 @@ import SwiftUI
 struct FONImageApp: App {
     
     @StateObject var timeInfo = TimerInfo()
-
+    @StateObject var textInfo = TextInfo()
     
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .environmentObject(timeInfo)
+                .environmentObject(textInfo)
         }
     }
 }

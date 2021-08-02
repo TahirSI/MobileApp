@@ -9,7 +9,6 @@ import SwiftUI
 
 struct MainView: View {
     
-    @State private var discriptionText = "No mrore work"
     
     @ObservedObject var keyboardResponder = KeyboardResponder()
         
@@ -51,7 +50,7 @@ struct MainView: View {
             .animation(
                 Animation.easeInOut(duration: 0.4))
             .navigationBarTitle(
-                Text(discriptionText), displayMode: .inline
+                Text(textInfo.text), displayMode: .inline
                 )
             .navigationBarItems(
                 trailing:

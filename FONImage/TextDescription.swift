@@ -22,7 +22,7 @@ struct TextDescription: View {
     @State private var backgroundColor = Color.black
     @State private var backgroundOpacity = 0.0
     
-    @ObservedObject var texInfo = TextInfo()
+    @EnvironmentObject var texInfo: TextInfo
     @EnvironmentObject var timerInfo: TimerInfo
 
     
