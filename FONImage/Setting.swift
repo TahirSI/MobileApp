@@ -11,7 +11,7 @@ import SwiftUI
 struct Setting: View {
         
     @EnvironmentObject var timerInfo: TimerInfo
-    @ObservedObject var textInfo = TextInfo()
+    @EnvironmentObject var textInfo: TextInfo
     
         
     var body: some View {
