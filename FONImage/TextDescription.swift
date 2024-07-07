@@ -11,7 +11,7 @@ import Combine
 class TextInfo: ObservableObject {
     
     @Published var isTyping = false
-    @Published var text = "No mrore work"
+    @Published var text = "Pick up from swimming"
 }
 
 struct TextDescription: View {

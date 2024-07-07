@@ -11,7 +11,7 @@ struct ImageWindow: View {
             
     @EnvironmentObject var timeInfo: TimerInfo
 
-    @State var image: Image? = Image("Nmw")
+    @State var image: Image? = Image("Image")
 
     @State private var acatuonSheet = false
     @State private var imagePicker = false
